@@ -1,1 +1,0 @@
-# mfurkanuygur.github.io
