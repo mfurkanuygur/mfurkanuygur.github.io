@@ -2,12 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 .navbar{
-    height: 4em;
-    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.166);
-
+    height: 4.5em;
+     box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.166);
 }
 /* logo başlangıç */
 .navbar-brand span{
@@ -18,16 +16,14 @@
     font-family: 'Inspiration', cursive;
 }
 /* logo son */
-
 #collapsibleNavbar{
     text-align: center;
     background-color:transparent;
-
 }
 
 /* menü çubuğu linkleri */
 .nav-link{
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 15px;
     font-weight:  400;  
 }
@@ -44,24 +40,31 @@
     background-position: center;
     position: relative;
     z-index: 1;
-    filter: brightness(70%)/*opaklık*/
+   
+    filter: brightness(100%)/*opaklık*/
 }
-@media screen and (max-width:915px) {
+@media screen and (max-width:700px) {
+    .navbar-brand span{
+        color: white;
+    }
+    .button{
+        color: white;
+    }
     #hero{
     width: 100%;
-    background-position: left;
+    background-image: url("aksam.jpg");
+    background-position: bottom right;
    
     }
-    #isim{
-        text-align: end;
-    }
+
 }   
 
 #isim{
     text-align: center;
+    color: rgb(0, 0, 0);
     font-weight: lighter;
     font-size: 2.3rem;
-    border:1px solid gray;
+    border:1px solid rgb(0, 0, 0);
     padding:20px;
     border-radius: 5px;
 
