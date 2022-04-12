@@ -23,11 +23,11 @@
 
 /* menü çubuğu linkleri */
 .nav-link{
-    color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 15px;
     font-weight:  400;  
 }
-#hero{
+#hero1{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -47,10 +47,10 @@
     .navbar-brand span{
         color: white;
     }
-    .button{
-        color: white;
+    .nav-link{
+        color: white !important;
     }
-    #hero{
+    #hero1{
     width: 100%;
     background-image: url("aksam.jpg");
     background-position: bottom right;
