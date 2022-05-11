@@ -1,123 +1,127 @@
-*{
-    box-sizing: border-box;
+
+.logo {
+    font-family: 'Inspiration', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+
+}
+
+/*Menü çubuğu ana gövde*/
+.sidebar {
     margin: 0;
     padding: 0;
+    width: 100px;
+    background-color: #000000;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
 }
-.navbar{
-    height: 4.5em;
-     box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.166);
-}
-/* logo başlangıç */
-.navbar-brand span{
-    color: rgb(0, 0, 0);
-    letter-spacing: .1rem;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Inspiration', cursive;
-}
-/* logo son */
-#collapsibleNavbar{
-    text-align: center;
-    background-color:transparent;
-}
-
-/* menü çubuğu linkleri */
-.nav-link{
-    color: rgb(0, 0, 0) !important;
-    font-size: 15px;
-    font-weight:  400;  
-}
-#hero1{
+/*Menü çubuğu link içerikleri(bağlantılar)*/
+.sidebar a {
+    color: whitesmoke;
+    padding: 35px;
+    text-decoration: none;
     justify-content: center;
-    align-items: center;
+    display: block;
+    margin: 0px 0 10px 0 ;
+}
+/*ikonlar*/
+.sidebar a i {
+    padding: 15px;
     display: flex;
-    margin: 0 auto;
-    height: 100vh;/* Yıldız */
-    width: 100%;
-    background-image: url("sahil.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  center;
-    position: relative;
-    z-index: 1;
-    filter: brightness(100%)/*opaklık*/
+    justify-content: center;
 }
-@media screen and (max-width:700px) {
-    .navbar-brand span{
-        color: white;
-    }
-    .nav-link{
-        color: white !important;
-    }
-    #hero1{
-    width: 100%;
-    background-image: url("aksam.jpg");
-    background-position: bottom right;
-   
-    }
-    #isim{
-        font-size: 5rem;
-        color: white;
-    }
-
-}   
-
-#isim{
+/*ikon başlıkları*/
+.sidebar a p {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-    font-size: 2rem;
-    border:1px solid rgba(0, 0, 0, 0.309);
-    padding:20px;
-    border-radius: 5px;
+    margin: 0 auto;
+    font-size: medium;
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
 
 }
-#hero1 button{
-    position: absolute;
-    margin-bottom:1em ;
-    bottom: 0;
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: transparent;
-    color: white;
-    font-weight: 500;
+/*Hover efekt*/
+.sidebar a:hover:not(.active) {
+    transition: .4s ease-out;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
-/**********************************************************/
-  .arrow{
-      
-      position: absolute;
-      bottom: 0%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  }
-  .arrow span{
-      display: block;
-      width: 10px;
-      height: 10px;
-      border-bottom: 2px solid #ffffff;
-      border-right: 2px solid #ffffff;
-      transform: rotate(-45deg);
-      margin: -10px;
-      animation: animate 2s infinite;
-  }
-  .arrow span:nth-child(2){
-      animation-delay: -1s;
-  }
-  .arrow span:nth-child(3){
-      animation-delay: -0.4s;
-  }
-  @keyframes animate {
-      0%{
-          opacity: 0;
-          transform: rotate(45deg) translate(-20px,-20px);
-      }
-      50%{
-          opacity: 1;
-      }
-      100%{
-          opacity: 0;
-          transform: rotate(45deg) translate(10px,10px);
-      }
-  }
-/**********************************************************/
+
+/*sectionOne*/
+#sectionone {
+    justify-content: center;
+    display: flex;
+    margin-left: 100px;
+    padding-top: 5em;
+    height: 100vh;
+    background-image: url("ak.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+}
+#sectionone p{
+    text-align: center;
+    font-family: 'Zen Loop', cursive;
+    letter-spacing: 0.75rem;
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+}
+#sectionone p:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    padding: 4em;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        bottom: 0 !important ; 
+        justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .sidebar a {
+        float: left;
+        padding: 8px;
+        margin: 0;        
+    }
+
+    #sectionone {
+        margin-left: 0;
+        background-position: bottom right;
+    }
+    .sidebar a p{
+        display: none !important;
+    }
+    #sectionone p:nth-child(2){
+        padding-top: 150px;
+        font-size: 16px;
+        letter-spacing: 0.3rem;
+    }
+    
+}
+/* 
+
+@media screen and (max-width: 300px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+ */
