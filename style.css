@@ -88,7 +88,7 @@
     .sidebar {
         width: 100%;
         height: auto;
-        bottom: 0 !important ; 
+        
         justify-content: space-between;
         display: flex;
         margin: 0 auto;
