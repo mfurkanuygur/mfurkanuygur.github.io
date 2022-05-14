@@ -103,7 +103,6 @@
     text-align: left;
     padding-top: 5rem;
     padding-left: 5rem;
-    
 }
 
 #sectiontwo hr {
@@ -120,6 +119,7 @@
     text-align: justify;
     padding-left: 5rem;
     font-weight: 600;
+    text-indent:25px;
 }
 
 /*********************/
@@ -127,9 +127,21 @@
     padding-top: 5rem;
     margin-left: 100px;
     background-color: #000000;
-    height: 100vh;
+    height: 105vh;
 }
-
+#sectionthree p:nth-child(1){
+    font-family: 'Zen Loop', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    padding-left: 5rem;
+}
+#sectionthree hr{
+    margin-left: 5em;
+    width: 84%;
+    color: rgb(255, 255, 255);
+}
 .skilltitle {
     color: white;
     font-family: 'Zen Loop', cursive;
@@ -168,11 +180,15 @@
     width: 40%;
     background-color: #434343e9;
 }
+
+/***************************/
 #sectionfour {
     padding-top: 5rem;
     margin-left: 100px;
     background-color: #000000;
     height: 100vh;
+   
+    
 }
 #sectionfour hr {
     margin-left: 5em;
@@ -197,7 +213,6 @@
   
 }
 #sectionfour span{
-    
     padding-left:5rem;
     display: block;
     margin-bottom: 1em;
@@ -212,7 +227,13 @@
     margin-right:2rem;
     width: 1.5rem;
 }
-
+#sectionfour a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width: 900px) {
+    
+}
 @media screen and (max-width: 700px) {
     .sidebar {
         width: 100%;
@@ -247,7 +268,7 @@
 
     #sectiontwo {
         margin-left: 0;
-
+        height: 170vh;
     }
 
     #sectiontwo p:nth-child(1) {
@@ -267,22 +288,28 @@
 
     #sectionthree {
         margin-left: 0;
-        padding-top: 3rem;
+        padding-top: 5rem;
+        height: 100vh;
     }
-
+    #sectionthree hr{
+        margin-left: 11%;
+        width: 77%;
+    }
+    #sectionthree p:nth-child(1){
+        padding-left: 3rem;
+    }
+   
     .skilltitle {
         padding-left: 3rem;
     }
-
     .bar {
         margin-left: 3rem;
         width: 75%;
     }
-
     #sectionfour {
         margin-left: 0;
+        
     }
-    
     #sectionfour p{
         padding-left: 3rem;
     }
@@ -291,14 +318,13 @@
     }
 
 }
-
-/* 
-
-@media screen and (max-width: 300px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
+@media (min-width:700px) and (max-width:950px) {
+     #sectionthree{
+         height: 170vh;
+         
+     }
+     #sectiontwo {
+        
+        height: 220vh;
     }
 }
-
- */
