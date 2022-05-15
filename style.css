@@ -327,12 +327,12 @@
 }
 @media (min-width:740px) and (max-width:950px) {
      #sectionthree{
-         height: 180vh;
+         height: 100vh;
          overflow: auto;
          
      }
      #sectiontwo {
-        height: 220vh;
+        height: 100vh;
         overflow: auto;
     }
     #sectionfour ul {
