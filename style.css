@@ -325,7 +325,7 @@
     }
 
 }
-@media (min-width:740px) and (max-width:950px) {
+@media (min-width:700px) and (max-width:950px) {
      #sectionthree{
          height: 100vh;
          overflow: auto;
