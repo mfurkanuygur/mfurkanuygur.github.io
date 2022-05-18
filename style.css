@@ -113,13 +113,14 @@
 
 #sectiontwo p:nth-child(3) {
     width: 90%;
-    font-family: 'Zen Loop', cursive;
-    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    font-size: 15px;
     color: white;
     text-align: justify;
     padding-left: 5rem;
-    font-weight: 600;
+    font-weight: 200;
     text-indent:25px;
+    overflow: auto;
 }
 
 /*********************/
